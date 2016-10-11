@@ -112,6 +112,7 @@ html, body, #universe, #stars{
 
 #stars{
   background: url('../images/stars.jpg') no-repeat;
+  background-size: cover;
   position: relative;
   z-index: 2;
 
@@ -124,6 +125,7 @@ html, body, #universe, #stars{
 #sun{
   height: 200px;
   width: 200px;
+  transform: scale(.5, .5);
 
   background: orange;
   background: -webkit-radial-gradient(#f5c313, #ec7e08);
@@ -154,7 +156,6 @@ html, body, #universe, #stars{
 }
 
 #earthOrbit{
-  border: solid 1px red;
   height: 700px;
   width: 600px;
 
@@ -177,8 +178,8 @@ html, body, #universe, #stars{
 }
 
 #earth{
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 
   position: absolute;
   top: 50%;
@@ -194,8 +195,7 @@ html, body, #universe, #stars{
 }
 
 #moonOrbit{
-  border:solid 1px red;
-  height: 140px;
+  height: 120px;
   width: 100px;
 
   position: absolute;
@@ -203,7 +203,7 @@ html, body, #universe, #stars{
   top: 50%;
   left: -5px;
 
-  margin-top: -70px;
+  margin-top: -60px;
 
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
