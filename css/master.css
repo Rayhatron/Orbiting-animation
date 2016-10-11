@@ -1,0 +1,53 @@
+html, body, #universe, #stars{
+  height: 100%;
+  width: 100%;
+}
+
+#universe{
+  background: black;
+  background: -webkit-radial-gradient(#555, #000);
+  background: -moz-radial-gradient(#555, #000);
+  background: -o-radial-gradient(#555, #000);
+  background: radial-gradient(#555, #000);
+}
+
+#stars{
+  background: url('../images/stars_night.jpg') no-repeat;
+  position: relative;
+  z-index: 2;
+}
+
+#sun{
+  height: 200px;
+  width: 200px;
+
+  background: orange;
+  background: -webkit-radial-gradient(#f5c313, #ec7e08);
+  background: -moz-radial-gradient(#f5c313, #ec7e08);
+  background: -o-radial-gradient(#f5c313, #ec7e08);
+  background: radial-gradient(#f5c313, #ec7e08);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  z-index: 4;
+
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+
+  -webkit-box-shadow: 0 0 50px #f5c91a;
+  -moz-box-shadow: 0 0 50px #f5c91a;
+  box-shadow: 0 0 50px #f5c91a;
+}
+
+#earthOrbit{
+  border: solid 1px red;
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  z-index: 4;
+}
