@@ -1,5 +1,98 @@
 /*Animations of universe and planets*/
+@-webkit-keyframes starPluse {
+  from {opacity: 1;}
+  to { opacity: 0.2;}
+}
 
+@-moz-keyframes starPluse {
+  from {opacity: 1;}
+  to { opacity: 0.2;}
+}
+
+@-o-keyframes starPluse {
+  from {opacity: 1;}
+  to { opacity: 0.2;}
+}
+
+@keyframes starPluse {
+  from {opacity: 1;}
+  to { opacity: 0.2;}
+}
+
+/* SUN GLOW ANIMATION */
+@-webkit-keyframes sunGlow {
+  from {
+    -webkit-box-shadow: 0 0 50px #f5c91a;
+    -moz-box-shadow: 0 0 50px #f5c91a;
+    box-shadow: 0 0 50px #f5c91a;
+  }
+  to {
+    -webkit-box-shadow: 0 0 100px #f5c91a;
+    -moz-box-shadow: 0 0 100px #f5c91a;
+    box-shadow: 0 0 100px #f5c91a;
+  }
+}
+
+@-moz-keyframes sunGlow {
+  from {
+    -webkit-box-shadow: 0 0 50px #f5c91a;
+    -moz-box-shadow: 0 0 50px #f5c91a;
+    box-shadow: 0 0 50px #f5c91a;
+  }
+  to {
+    -webkit-box-shadow: 0 0 100px #f5c91a;
+    -moz-box-shadow: 0 0 100px #f5c91a;
+    box-shadow: 0 0 100px #f5c91a;
+  }
+}
+
+@-o-keyframes sunGlow {
+  from {
+    -webkit-box-shadow: 0 0 50px #f5c91a;
+    -moz-box-shadow: 0 0 50px #f5c91a;
+    box-shadow: 0 0 50px #f5c91a;
+  }
+  to {
+    -webkit-box-shadow: 0 0 100px #f5c91a;
+    -moz-box-shadow: 0 0 100px #f5c91a;
+    box-shadow: 0 0 100px #f5c91a;
+  }
+}
+
+@keyframes sunGlow {
+  from {
+    -webkit-box-shadow: 0 0 50px #f5c91a;
+    -moz-box-shadow: 0 0 50px #f5c91a;
+    box-shadow: 0 0 50px #f5c91a;
+  }
+  to {
+    -webkit-box-shadow: 0 0 100px #f5c91a;
+    -moz-box-shadow: 0 0 100px #f5c91a;
+    box-shadow: 0 0 100px #f5c91a;
+  }
+}
+
+
+/* PLANET ROTATion ANIMATION*/
+@-webkit-keyframes planetRotation {
+  from{ transform: rotate (0); }
+  to { transform: rotate(360deg); }
+}
+
+@-moz-keyframes planetRotation {
+  from{ transform: rotate (0); }
+  to { transform: rotate(360deg); }
+}
+
+@-o-keyframes planetRotation {
+  from{ transform: rotate (0); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes planetRotation {
+  from{ transform: rotate (0); }
+  to { transform: rotate(360deg); }
+}
 
 
 
@@ -18,9 +111,14 @@ html, body, #universe, #stars{
 }
 
 #stars{
-  background: url('../images/stars_night.jpg') no-repeat;
+  background: url('../images/stars.jpg') no-repeat;
   position: relative;
   z-index: 2;
+
+  -webkit-animation: starPluse 5s infinite alternate;
+  -moz-animation: starPluse 5s infinite alternate;
+  -o-animation: starPluse 5s infinite alternate;
+  animation: starPluse 5s infinite alternate;
 }
 
 #sun{
@@ -48,6 +146,11 @@ html, body, #universe, #stars{
   -webkit-box-shadow: 0 0 50px #f5c91a;
   -moz-box-shadow: 0 0 50px #f5c91a;
   box-shadow: 0 0 50px #f5c91a;
+
+  -webkit-animation: sunGlow 2s infinite alternate;
+  -moz-animation: sunGlow 2s infinite alternate;
+  -o-animation: sunGlow 2s infinite alternate;
+  animation: sunGlow 2s infinite alternate;
 }
 
 #earthOrbit{
@@ -58,7 +161,7 @@ html, body, #universe, #stars{
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -300px;
+  margin-top: -350px;
   margin-left: -300px;
   z-index: 4;
 
@@ -66,6 +169,11 @@ html, body, #universe, #stars{
   -moz-border-radius: 100%;
   -o-border-radius: 100%;
   border-radius: 100%;
+
+  -webkit-animation: planetRotation 30s linear infinite;
+  -moz-animation: planetRotation 30s linear infinite;
+  -o-animation: planetRotation 30s linear infinite;
+  animation: planetRotation 30s linear infinite;
 }
 
 #earth{
@@ -77,24 +185,35 @@ html, body, #universe, #stars{
   left: 0;
 
   margin-top: -40px;
+
+  -webkit-animation: planetRotation 3s linear infinite;
+  -moz-animation: planetRotation 3s linear infinite;
+  -o-animation: planetRotation 3s linear infinite;
+  animation: planetRotation 3s linear infinite;
+
 }
 
 #moonOrbit{
   border:solid 1px red;
-  height: 220px;
-  width: 120px;
+  height: 140px;
+  width: 100px;
 
   position: absolute;
   z-index: 4;
   top: 50%;
-  left: -20px;
+  left: -5px;
 
-  margin-top: -110px;
+  margin-top: -70px;
 
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -o-border-radius: 100%;
   border-radius: 100%;
+
+  -webkit-animation: planetRotation 4s linear infinite reverse;
+  -moz-animation: planetRotation 4s linear infinite reverse;
+  -o-animation: planetRotation 4s linear infinite reverse;
+  animation: planetRotation 4s linear infinite reverse;
 
 }
 
